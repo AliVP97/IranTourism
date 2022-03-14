@@ -1,0 +1,11 @@
+import React from 'react';
+import {Text, View} from 'react-native';
+import styles from './style';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Text style={{color: 'black'}}>Toggle Button</Text>
+    </View>
+  );
+}
