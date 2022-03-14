@@ -1,32 +1,16 @@
-import React, {useEffect} from 'react';
-import {Image, Text, View, PermissionsAndroid} from 'react-native';
+import React, {useEffect, useMemo, useState} from 'react';
+import {Image, Text, View} from 'react-native';
 import {Icon} from 'react-native-elements';
-import Geolocation from 'react-native-geolocation-service';
+import getLocation from '../../../utils/getLocation';
 import styles from './style';
 
 export default function App() {
-  const permissionHandler = async () => {
-    const hasLocationPermission = await PermissionsAndroid.request(
-      PermissionsAndroid.PERMISSIONS.ACCESS_FINE_LOCATION,
-      {
-        title: 'Geolocating App',
-        message: 'Let Geolocating App access to your location ',
-      },
-    );
+  const [locationData, setLocationData] = useState();
 
-    if (hasLocationPermission) {
-      Geolocation.getCurrentPosition(
-        position => {
-          console.log(position);
-        },
-        error => {
-          // See error code charts below.
-          console.log(error.code, error.message);
-        },
-        {enableHighAccuracy: true, timeout: 15000, maximumAge: 10000},
-      );
-    }
-  };
+  useEffect(() => {
+    location;
+    getLocation().then(res => setLocationData(res));
+  }, []);
 
   return (
     <View style={styles.container}>
