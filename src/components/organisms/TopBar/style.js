@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
     icon: {
       fontSize: 12,
       color: '#3BAFE9',
-      marginEnd: 5,
+      marginStart: 5,
     },
     text: {
       fontSize: 15,
