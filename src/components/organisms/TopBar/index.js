@@ -10,6 +10,7 @@ export default function App() {
         name="grid-outline"
         type="ionicon"
         color={styles.menu.icon.color}
+        size={styles.menu.icon.fontSize}
         style={styles.menu.icon}
       />
       <View style={styles.currentLocation}>
@@ -19,9 +20,10 @@ export default function App() {
             name="map-marker-alt"
             type="font-awesome-5"
             color={styles.location.icon.color}
+            size={styles.location.icon.fontSize}
             style={styles.location.icon}
           />
-          <Text style={styles.location.text}>Tehran, Iran</Text>
+          <Text style={styles.location.text}>Denapasar, Bali</Text>
         </View>
       </View>
       <Image

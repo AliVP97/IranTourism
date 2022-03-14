@@ -5,15 +5,16 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    borderWidth: 1,
-    borderColor: 'gray',
-    margin: 30,
+    marginHorizontal: 30,
+    marginTop: 50,
+    marginBottom: 40,
   },
   menu: {
     icon: {
       height: 35,
       width: 35,
-      padding: 5,
+      padding: 7,
+      fontSize: 21,
       backgroundColor: 'white',
       color: '#989898',
       borderRadius: 8,
@@ -31,19 +32,24 @@ const styles = StyleSheet.create({
 
     text: {
       fontSize: 12,
-      color: '#989898',
+      letterSpacing: 0.5,
+      color: '#8A8A8A',
     },
   },
   location: {
     flexDirection: 'row',
-    alignItems: 'center',
+    alignItems: 'baseline',
 
     icon: {
+      fontSize: 12,
       color: '#3BAFE9',
-      marginEnd: 3,
+      marginEnd: 5,
     },
     text: {
+      fontSize: 15,
       fontWeight: 'bold',
+      color: 'black',
+      marginTop: 5,
     },
   },
 });
