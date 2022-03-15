@@ -1,8 +1,10 @@
 import {StyleSheet} from 'react-native';
 
 const styles = StyleSheet.create({
-  container: {
-    display: 'flex',
+  container: {},
+  icon: {
+    height: 36,
+    width: 36,
   },
 });
 

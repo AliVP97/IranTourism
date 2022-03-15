@@ -1,17 +1,14 @@
 import React from 'react';
 import {View} from 'react-native';
-import ToggleButton from '../../molcules/ToggleButton';
+import ButtonGroup from '../../molcules/ButtonGroup';
+import {buttons} from './const';
+
 import styles from './style';
 
 export default function App() {
   return (
-    <View>
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
-      <ToggleButton title="Happy" icon={{name: 'happy', type: 'ionicons'}} />
+    <View style={styles.container}>
+      <ButtonGroup buttons={buttons} />
     </View>
   );
 }
