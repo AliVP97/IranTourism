@@ -39,7 +39,6 @@ export default function App() {
       <View style={styles.currentLocation}>
         <Text style={styles.currentLocation.text}>مکان کنونی</Text>
         <View style={styles.location}>
-          <Text style={styles.location.text}>{placeName}</Text>
           <Icon
             name="map-marker-alt"
             type="font-awesome-5"
@@ -47,6 +46,7 @@ export default function App() {
             size={styles.location.icon.fontSize}
             style={styles.location.icon}
           />
+          <Text style={styles.location.text}>{placeName}</Text>
         </View>
       </View>
       <Image
