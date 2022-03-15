@@ -51,7 +51,7 @@ export default function App() {
       </View>
       <Image
         source={{
-          uri: 'https://www.himalmag.com/wp-content/uploads/2019/07/sample-profile-picture.png',
+          uri: 'https://unsplash.com/photos/ZHvM3XIOHoE/download?force=true&w=640',
         }}
         style={styles.profile}
       />
